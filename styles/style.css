@@ -6,16 +6,24 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 26px;
+    border-radius: 5px;
 }
 .section_title{
     color: #562EFF;
     font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+hr{
+    border: 1px solid skyblue;
 }
 .players{
     display: grid;
@@ -32,4 +40,35 @@ main{
 }
 .player_name{
     margin-left: 16px;
+}
+.blog_article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 16px;
+}
+.blog{
+    display: flex;
+    width: 375px;
+}
+.blog_img img{
+    width: 177px;
+    height: 117px;
+}
+.blog_des{
+    margin-left: 15px;
+    margin-top: 3px;
+}
+.blog_des h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.blog_des p{
+    margin: 0;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.blog_des a{
+    text-decoration: none;
+    color: #562EFF;
 }
